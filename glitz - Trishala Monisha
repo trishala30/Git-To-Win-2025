@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    char word[] = "LEAP";
+    int len = sizeof(word) / sizeof(word[0]) - 1;
+    int i, j;
+
+    
+    for (i = 0; i < len; i++) {
+        
+        for (j = 0; j < len; j++) {
+            
+            if (i == j) {
+                printf("%c ", word[i]);
+            } else {
+                printf("* ");
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
